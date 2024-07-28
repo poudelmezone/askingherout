@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0c95f0;
+}
+
+body .main-box {
+    width: 100%; 
+    min-height: 75vh; 
+    display: grid; 
+}
+
+body .main-box h1 {
+    place-self: center;
+    margin-top: 100px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+body .main-box .button-box {
+    place-self: center;
+    height: 10vh;
+    width: 75vh;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .main-box .button-box .yes, 
+body .main-box .button-box .no {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border: 1px solid;
+    padding: 15px 34px;
+    font-size: 19px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+body .main-box .button-box .yes {
+    border-color: #03792c;
+    margin-right: 65px;
+}
+
+body .main-box .button-box .yes:hover {
+    background: #03792c;
+}
+
+body .main-box .button-box .no {
+    border-color: rgb(207, 12, 12);
+}
+
+body .main-box .button-box .no:hover {
+    background: rgb(207, 12, 12);
+}
+
+body .main-box .button-box button {
+    background: transparent;
+    border: transparent;
+}
+
+@media (max-width: 768px) {
+    body .main-box .button-box {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    body .main-box .button-box .yes {
+        margin: 10px 0;
+        padding: 12px 28px;
+        font-size: 17px;
+    }
+
+    body .main-box .button-box .no {
+        margin: 10px 0;
+        padding: 12px 28px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    body .main-box h1 {
+        font-size: 1.2em;
+        margin-top: 50px;
+    }
+
+    body .main-box .button-box {
+        width: 100%;
+    }
+
+    body .main-box .button-box .yes, 
+    body .main-box .button-box .no {
+        font-size: 15px;
+        padding: 10px 24px;
+    }
+}
+
+/* yay */
+.yay{
+    text-align: center;
+}
